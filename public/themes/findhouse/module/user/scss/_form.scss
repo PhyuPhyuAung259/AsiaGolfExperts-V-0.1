@@ -1,0 +1,41 @@
+.control-map-group{
+    position: relative;
+    #map_content{
+        margin-right: 270px;
+        height: 300px;
+    }
+    .g-control{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 250px;
+        border: solid 1px #cccc;
+        padding: 15px 15px 5px;
+        label{
+            min-width: 75px;
+            display: inline-block;
+        }
+    }
+    .bravo_searchbox{
+        width: 250px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 0;
+        height: 45px;
+    }
+}
+.terms-scrollable{
+    overflow-y: auto;
+    background: #f4f6f8;
+    padding:10px;
+    border: 1px solid #e1e2e5;
+    max-height: 250px;
+    label{
+        display: block;
+        margin-bottom:10px;
+        &:last-child{
+            margin-bottom:0px;
+        }
+    }
+}

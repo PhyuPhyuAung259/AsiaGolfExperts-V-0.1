@@ -1,0 +1,83 @@
+@import "../../sass/fields/smart-search";
+.bravo_form_search_map {
+    select.form-control{
+        border-color:rgb(235, 235, 235);
+        border-radius: 8px;
+    }
+}
+.bravo_search_map{
+    #advance_filters{
+        background: white;
+        padding: 15px;
+    }
+    #advance_filters{
+        position: absolute;
+        top:100%;
+        left:0px;
+        right:0px;
+        display: flex;
+        z-index: 999999;
+        flex-direction: column;
+        background: white;
+        @media( max-width: 990px) {
+            position: fixed;
+            bottom: 0;
+        }
+        .ad-filter-b{
+            flex-grow: 1;
+            min-height: 0px;
+            overflow-y: auto;
+            padding:30px;
+            .filter-item{
+                border-bottom: 1px solid #dbdbdb;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                &:last-child{
+                    border-bottom: 0px;
+                }
+            }
+            .filter-title{
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+            .filter-items{
+                // display: flex;
+                padding: 0px;
+                // margin: 0px;
+                // justify-content: space-between;
+                list-style: none;
+                .filter-term-item{
+                    // width: 33%;
+                    label{
+                        margin-bottom: 8px;;
+                    }
+                }
+            }
+        }
+        .ad-filter-f{
+            border-top: 1px solid #ececec;
+            background-color: #fafafa;
+            flex-shrink: 0;
+            padding:10px 15px;
+            border-bottom: 1px solid #dad8d8;
+        }
+    }
+    .text-paginate{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 15px 0 0;
+        color: #818181;
+        h2{
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 0;
+        }
+    }
+}
+.hvr-text-thm{
+    color:#555;
+    &.active{
+        color: #ff5a5f;
+    }
+}
